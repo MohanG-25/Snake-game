@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css" integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <title >Snake Game</title>
+    <link rel="icon" href="download.png">
+</head>
+<style>
+    body{
+        height:100vh;
+        width: 100vw;
+        background-color: black;
+        display: flex;
+        justify-content: center;
+        text-align:center;
+        margin:0;
+    }
+    #gameboard{
+        background-color: #ccc;
+        display: grid;
+        height: 100vmin;
+        width:100vmin;
+        grid-template-rows: repeat(21,1fr);
+        grid-template-columns: repeat(21,1fr);
+    }
+    .snake{
+        background-color:hsl(200, 100%, 50%);
+        border: .25vmin solid black;
+    }
+    .food{
+        background-color:hsl(50, 100%, 50%);
+        border: .25vmin solid black;
+    }
+
+</style>
+
+<body>
+    <div id="gameboard"></div>
+    <script src="game.js" type="module" ></script>
+</body>
+
+</html>
